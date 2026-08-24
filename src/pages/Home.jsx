@@ -1,6 +1,7 @@
 import Hero from '../components/Hero'
 import './Home.css'
 import PregoAvisos from '../components/PregoAvisos'
+import NewsSection from '../components/NewsSection'
 
 function Home() {
   return (
@@ -9,6 +10,8 @@ function Home() {
       <Hero />
 
        <PregoAvisos />
+       
+   <NewsSection />
 
       <section className="home-content">
         <div className="home-container">
