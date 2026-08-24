@@ -1,0 +1,93 @@
+.prego-section {
+  padding: 50px 0;
+  background: var(--color-bg);
+}
+
+.prego-container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  padding: 32px 40px;
+
+  background: var(--color-green-soft);
+
+  border-left: 3px solid var(--color-green);
+  border-radius: 0px;
+}
+
+.prego-icon {
+  width: 58px;
+  height: 58px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  background: var(--color-green);
+  border-radius: 50%;
+
+  font-size: 1.6rem;
+}
+
+.prego-content {
+  flex: 1;
+}
+
+.prego-label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: var(--color-green-dark);
+
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.prego-content h2 {
+  margin-bottom: 8px;
+
+  color: var(--color-text);
+
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+}
+
+.prego-content p {
+  max-width: 760px;
+
+  color: var(--color-text-soft);
+
+  line-height: 1.6;
+}
+
+.prego-button {
+  margin-top: 18px;
+
+  padding: 11px 20px;
+
+  border: none;
+  border-radius: 0px;
+
+  background: transparent;
+  color: var(--color-green);
+
+  font-weight: 700;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.prego-button:hover {
+  border-bottom: 1px solid var(--color-green);
+
+  transform: translateY(-1px);
+}
+
+

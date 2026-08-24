@@ -1,0 +1,201 @@
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+  background: var(--color-green-dark);
+  color: white;
+}
+
+
+/* ========================================
+   MAIN FOOTER
+======================================== */
+
+.footer-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+
+  padding: 70px 0;
+
+  display: grid;
+  grid-template-columns:
+    1.5fr
+    1fr
+    1fr
+    1.3fr;
+
+  gap: 60px;
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+
+  display: block;
+
+  margin-bottom: 22px;
+}
+
+.footer-brand p {
+  margin-bottom: 6px;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-brand span {
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 0.9rem;
+}
+
+
+/* ========================================
+   COLUMNS
+======================================== */
+
+.footer-column,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column h2,
+.footer-contact h2 {
+  margin-bottom: 20px;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.footer-column a {
+  width: fit-content;
+
+  margin-bottom: 12px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 0.9rem;
+
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: white;
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 14px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 0.9rem;
+}
+
+
+/* ========================================
+   BOTTOM
+======================================== */
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer-bottom-container {
+  width: min(1400px, 92%);
+  margin: 0 auto;
+
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.footer-links a {
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 767px) {
+
+  .footer-container {
+    width: 88%;
+
+    padding: 50px 0;
+
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+  .footer-logo {
+    width: 105px;
+  }
+
+  .footer-bottom-container {
+    width: 88%;
+
+    padding: 22px 0;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 18px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 12px 20px;
+  }
+
+}

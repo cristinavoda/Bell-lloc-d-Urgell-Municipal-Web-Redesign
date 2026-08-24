@@ -1,0 +1,31 @@
+ayuntamiento-web/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Hero.jsx
+│   │   ├── PregóDestacat.jsx
+│   │   ├── NewsCard.jsx
+│   │   ├── EventCard.jsx
+│   │   └── ...
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Ajuntament.jsx
+│   │   ├── Ciutadania.jsx
+│   │   ├── Activitats.jsx
+│   │   ├── Infants.jsx
+│   │   ├── Joves.jsx
+│   │   ├── Esports.jsx
+│   │   ├── Noticies.jsx
+│   │   └── Contacte.jsx
+│   │
+│   ├── data/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public/
+├── package.json
+└── vite.config.js
