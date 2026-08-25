@@ -31,6 +31,7 @@ const searchData = [
       'Comunica un problema, incidència o desperfecte al municipi.',
     path: '/bell-lloc-soluciona',
     keywords: [
+        'bústia',
       'soluciona',
       'problema',
       'incidència',

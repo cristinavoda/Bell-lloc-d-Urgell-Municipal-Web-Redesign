@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Menu, X, Search } from 'lucide-react'
+import { Menu, X, Search, CloudSun } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import SearchOverlay from './SearchOverlay'
-
+import UtilityBar from './UtilityBar'
 
 import './Header.css'
 
@@ -127,7 +127,7 @@ const [searchOpen, setSearchOpen] = useState(false)
 
       </div>
 
-
+<UtilityBar />
       {/* OVERLAY */}
 
       <div
@@ -148,7 +148,23 @@ const [searchOpen, setSearchOpen] = useState(false)
         <div className="mobile-sidebar-header">
 
           <span>Menú</span>
+<div className="mobile-sidebar-info">
 
+  
+  <div className="mobile-sidebar-weather">
+    <CloudSun
+      size={18}
+      strokeWidth={1.7}
+      aria-hidden="true"
+    />
+
+    <div>
+      <strong>35° / 19°</strong>
+      <span>Dimarts, 25 d'agost</span>
+    </div>
+  </div>
+
+</div>
           <button
             type="button"
             className="mobile-close"

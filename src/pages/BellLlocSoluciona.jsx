@@ -96,7 +96,8 @@ function BellLlocSoluciona() {
             <span>
               NECESSITES AVISAR L’AJUNTAMENT?
             </span>
-
+           
+  <p>Bústia de suggeriments</p> 
             <h2>
               Comunica un problema
             </h2>

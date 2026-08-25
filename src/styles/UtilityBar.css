@@ -1,0 +1,47 @@
+/* =========================================
+   UTILITY BAR
+========================================= */
+
+.utility-bar {
+  width: 100%;
+
+  background: #f1f3ef;
+  border-bottom: 1px solid var(--color-border);
+
+  color: var(--color-text-soft);
+}
+
+.utility-container {
+  width: min(1400px, 92%);
+  min-height: 34px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 0.78rem;
+}
+
+.utility-weather {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .utility-bar {
+    display: none;
+  }
+
+}
