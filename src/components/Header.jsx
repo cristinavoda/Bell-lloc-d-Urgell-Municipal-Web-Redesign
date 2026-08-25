@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Menu, X, Search } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import SearchOverlay from './SearchOverlay'
+
 
 import './Header.css'
 
@@ -10,7 +12,7 @@ function Header() {
   const closeMenu = () => {
     setMenuOpen(false)
   }
-
+const [searchOpen, setSearchOpen] = useState(false)
   // Cerrar con Escape
   useEffect(() => {
     const handleKeyDown = (event) => {
@@ -54,8 +56,8 @@ function Header() {
           />
 
           <div className="logo-text">
-            <strong>Bell-lloc d'Urgell</strong>
-            <span>Ajuntament</span>
+            <strong> Ajuntament de Bell-lloc d'Urgell</strong>
+            
           </div>
         </NavLink>
 
@@ -72,6 +74,14 @@ function Header() {
           <NavLink to="/ajuntament" className="nav-link">
             Ajuntament
           </NavLink>
+          
+          <NavLink to="/ajuntament" className="nav-link">
+            Municipi
+          </NavLink>
+          
+          <NavLink to="/ajuntament" className="nav-link">
+            Seu Electronica
+          </NavLink>
 
           <NavLink to="/ciutadania" className="nav-link">
             Ciutadania
@@ -82,34 +92,38 @@ function Header() {
           </NavLink>
 
           <NavLink to="/actualitat" className="nav-link">
-            Actualitat
+        Bell-lloc soluciona
+          </NavLink>
+           
+          <NavLink to="/actualitat" className="nav-link">
+         Contacto
           </NavLink>
         </nav>
 
 
-        {/* ACTIONS */}
-        <div className="header-actions">
+<div className="header-actions">
 
-          <button
-            type="button"
-            className="search-button"
-            aria-label="Cercar al lloc web"
-          >
-            <Search size={20} strokeWidth={1.8} />
-          </button>
+  <button
+    type="button"
+    className="search-button"
+    aria-label="Cercar al lloc web"
+    onClick={() => setSearchOpen(true)}
+  >
+    <Search size={20} strokeWidth={1.8} />
+  </button>
 
-          <button
-            type="button"
-            className="menu-button"
-            onClick={() => setMenuOpen(true)}
-            aria-label="Obrir menú"
-            aria-expanded={menuOpen}
-            aria-controls="mobile-navigation"
-          >
-            <Menu size={24} strokeWidth={1.8} />
-          </button>
+  <button
+    type="button"
+    className="menu-button"
+    onClick={() => setMenuOpen(true)}
+    aria-label="Obrir menú"
+    aria-expanded={menuOpen}
+    aria-controls="mobile-navigation"
+  >
+    <Menu size={24} strokeWidth={1.8} />
+  </button>
 
-        </div>
+</div>
 
       </div>
 
@@ -168,6 +182,15 @@ function Header() {
             Ajuntament
           </NavLink>
 
+          
+          <NavLink to="/ajuntament" className="mobile-nav-link">
+            Municipi
+          </NavLink>
+          
+          <NavLink to="/ajuntament" className="mobile-nav-link">
+            Seu Electronica
+          </NavLink>
+
           <NavLink
             to="/ciutadania"
             className="mobile-nav-link"
@@ -176,25 +199,38 @@ function Header() {
             Ciutadania
           </NavLink>
 
-          <NavLink
-            to="/activitats"
-            className="mobile-nav-link"
-            onClick={closeMenu}
-          >
-            Activitats
+         
+
+           
+          <NavLink to="/actualitat" className="mobile-nav-link">
+        Bell-lloc soluciona
+          </NavLink>
+           
+          <NavLink to="/actualitat" className="mobile-nav-link">
+         Contacto
           </NavLink>
 
-          <NavLink
-            to="/actualitat"
-            className="mobile-nav-link"
-            onClick={closeMenu}
-          >
-            Actualitat
-          </NavLink>
+<button
+  type="button"
+  className="search-button"
+  onClick={() => {
+    closeMenu()
+    setSearchOpen(true)
+  }}
+  aria-label="Cercar al lloc web"
+>
+  <Search size={20} strokeWidth={1.8} />
+</button>
 
         </nav>
+          </aside>
 
-      </aside>
+  <SearchOverlay
+        isOpen={searchOpen}
+        onClose={() => setSearchOpen(false)}
+      />
+
+
 
     </header>
   )

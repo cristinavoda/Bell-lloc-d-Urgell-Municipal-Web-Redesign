@@ -1,0 +1,11 @@
+ACTUALITAT
+│
+├── 📰 Notícies
+│
+├── 📢 Pregó / Avisos
+│
+├── 📅 Agenda
+│
+├── 🎉 Activitats
+│
+└── 🔔 Comunicacions

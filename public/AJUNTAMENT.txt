@@ -1,0 +1,44 @@
+AJUNTAMENT
+│
+├── Alcaldia
+│   ├── Benvinguda de l'Alcalde
+│   ├── Agenda institucional
+│   └── Contacta amb l'alcalde
+│
+├── Corporació municipal
+│   ├── Organigrama municipal
+│   ├── Pla de govern
+│   ├── Retribucions
+│   ├── Declaracions de béns
+│   └── Grups polítics
+│
+├── Òrgans de govern
+│   ├── Ple de l'Ajuntament
+│   ├── Junta de Govern
+│   └── Comissió Especial de Comptes
+│
+├── Transparència
+│
+├── Informació econòmica
+│   ├── Pressupost
+│   ├── Calendari fiscal
+│   ├── Factures
+│   └── Retiment de comptes
+│
+├── Contractació
+│   └── Perfil del contractant
+│
+├── Promoció econòmica
+│
+├── Urbanisme
+│   ├── POUM
+│   └── Projectes i obres
+│
+├── Ocupació pública
+│
+├── Participació ciutadana
+│
+└── Comunicació
+    ├── Premsa
+    ├── Xarxes socials
+    └── Revista municipal

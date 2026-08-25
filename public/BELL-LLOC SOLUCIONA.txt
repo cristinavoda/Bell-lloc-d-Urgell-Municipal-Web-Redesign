@@ -1,0 +1,5 @@
+BELL-LLOC SOLUCIONA
+│
+├── Comunica un problema
+├── Problemes detectats
+└── Problemes solucionats

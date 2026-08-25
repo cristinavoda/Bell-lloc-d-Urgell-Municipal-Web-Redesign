@@ -1,0 +1,23 @@
+CIUTADANIA
+│
+├── 👶 Infants i famílies
+│
+├── 🎓 Joves
+│
+├── 👴 Gent gran
+│
+├── ♿ Accessibilitat
+│
+├── ⚽ Esports
+│
+├── 🎭 Cultura
+│
+├── 📚 Educació
+│
+├── 🏠 Habitatge
+│
+├── 💼 Ocupació
+│
+├── 🌱 Medi ambient
+│
+└── 🐕 Animals

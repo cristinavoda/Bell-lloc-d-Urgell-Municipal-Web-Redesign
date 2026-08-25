@@ -123,27 +123,24 @@ function Footer() {
           <span>
             © {new Date().getFullYear()} Ajuntament de Bell-lloc d'Urgell
           </span>
+<div className="footer-links">
 
-          <div className="footer-links">
+  <span>
+    Projecte desenvolupat per Cristina Voda
+  </span>
 
-            <a href="/accessibilitat">
-              Accessibilitat
-            </a>
+  <a
+    href="mailto:critinavoda483@gmail.com"
+  >
+    Contacte
+  </a>
 
-            <a href="/privacitat">
-              Privacitat
-            </a>
+  <a href="/accessibilitat">
+    Accessibilitat
+  </a>
 
-            <a href="/cookies">
-              Cookies
-            </a>
-
-            <a href="/mapa-web">
-              Mapa web
-            </a>
-
-          </div>
-
+</div>
+         
         </div>
 
       </div>

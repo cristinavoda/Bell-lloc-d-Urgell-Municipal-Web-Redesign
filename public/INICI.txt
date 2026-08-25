@@ -1,0 +1,13 @@
+INICI
+│
+├── 🏛️ AJUNTAMENT
+│
+├── 🌿 MUNICIPI
+│
+├── 💻 SEU ELECTRÒNICA
+│
+├── 👥 CIUTADANIA
+│
+├── 📢 BELL-LLOC SOLUCIONA
+│
+└── 📰 ACTUALITAT

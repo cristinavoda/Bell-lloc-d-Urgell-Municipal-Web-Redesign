@@ -1,0 +1,24 @@
+MUNICIPI
+│
+├── El municipi
+│   ├── Dades i situació
+│   ├── Com arribar-hi
+│   └── Història i patrimoni
+│
+├── Visita Bell-lloc
+│   ├── Llocs d'interès
+│   ├── Calendari de festes
+│   └── On menjar
+│
+├── Equipaments
+│   ├── La Cultural
+│   ├── Sala Multifuncional
+│   ├── Biblioteca
+│   ├── Hotel d'entitats
+│   ├── Llar del Jubilat
+│   ├── Centre de Serveis
+│   └── Equipaments esportius
+│
+├── Entitats i associacions
+│
+└── Transport públic

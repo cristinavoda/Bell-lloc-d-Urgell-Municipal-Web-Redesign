@@ -335,8 +335,9 @@
 }
 @media (min-width: 1200px) {
   .hero {
-    height: 66vh;
+    height: 56vh;
   }
+  
 }
 
 
