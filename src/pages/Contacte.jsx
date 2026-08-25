@@ -153,100 +153,93 @@ function Contacte() {
               </h2>
 
             </div>
+ <form className="contact-form">
+
+          <div className="contact-form-row">
+
+            <div className="contact-field">
+
+              <label htmlFor="contact-name">
+                Nom
+              </label>
+
+              <input
+                id="contact-name"
+                type="text"
+                name="name"
+                placeholder="Introdui el vostre nom complet"
+              />
+
+            </div>
 
 
-            <form className="contacte-form">
+            <div className="contact-field">
 
-              <div className="form-row">
+              <label htmlFor="contact-email">
+                Email
+              </label>
 
-                <div className="form-field">
+              <input
+                id="contact-email"
+                type="email"
+                name="email"
+                placeholder="tu@email.com"
+              />
 
-                  <label htmlFor="nom">
-                    Nom
-                  </label>
-
-                  <input
-                    id="nom"
-                    name="nom"
-                    type="text"
-                    placeholder="Introduïu el vostre nom complet"
-                    autoComplete="name"
-                  />
-
-                </div>
-
-
-                <div className="form-field">
-
-                  <label htmlFor="email">
-                    Correu electrònic
-                    <span>*</span>
-                  </label>
-
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder="Escriviu la vostra adreça de correu electrònic"
-                    autoComplete="email"
-                    required
-                  />
-
-                </div>
-
-              </div>
-
-
-              <div className="form-field">
-
-                <label htmlFor="assumpte">
-                  Assumpte <span>*</span>
-                </label>
-
-                <input
-                  id="assumpte"
-                  name="assumpte"
-                  type="text"
-                  placeholder="Assumpte del missatge"
-                  required
-                />
-
-              </div>
-
-
-              <div className="form-field">
-
-                <label htmlFor="missatge">
-                  Missatge <span>*</span>
-                </label>
-
-                <textarea
-                  id="missatge"
-                  name="missatge"
-                  rows="7"
-                  placeholder="Escriviu el missatge que voleu enviar."
-                  required
-                />
-
-              </div>
-
-
-              <button
-                type="submit"
-                className="contacte-submit"
-              >
-                Enviar missatge
-                <Send
-                  size={18}
-                  strokeWidth={1.8}
-                />
-              </button>
-
-            </form>
+            </div>
 
           </div>
 
 
+          <div className="contact-field">
+
+            <label htmlFor="contact-subject">
+              Assumpte
+            </label>
+
+            <input
+              id="contact-subject"
+              type="text"
+              name="subject"
+              placeholder="Assumpte del missatge"
+            />
+
+          </div>
+
+
+          <div className="contact-field">
+
+            <label htmlFor="contact-message">
+              Mensaje
+            </label>
+
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="5"
+              placeholder="Escribiu el missatge que voleu enviar..."
+            />
+
+          </div>
+
+
+          <button
+            type="submit"
+            className="contacte-submit"
+          >
+            Enviar mensaje
+          </button>
+
+        </form>
+
+
+
+            
+          </div>
+
+
+
+ 
           {/* MAPA / UBICACIÓ */}
 
           <aside className="contacte-location">
@@ -264,26 +257,19 @@ function Contacte() {
             </div>
 
 
-            <div className="location-map">
+          <div className="situacio-map">
 
-              <div className="location-placeholder">
+ <iframe
+      src="https://www.google.com/maps?q=Plaça+Major,+8,+25220+Bell-lloc+d'Urgell&output=embed"
+      title="Mapa de l'Ajuntament de Bell-lloc d'Urgell"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+</div>
 
-                <MapPin
-                  size={34}
-                  strokeWidth={1.5}
-                />
 
-                <strong>
-                  Plaça Major, 8
-                </strong>
 
-                <span>
-                  25220 Bell-lloc d'Urgell
-                </span>
 
-              </div>
-
-            </div>
 
 
             <a

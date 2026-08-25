@@ -2,7 +2,7 @@ import { MapPin, Users, Ruler, Building2 } from 'lucide-react'
 
 import BreadCrumb from '../components/BreadCrumb'
 
-import './styles/DadesSituacio.css'
+import '../styles/DadesSituacio.css'
 
 function DadesSituacio() {
   return (
@@ -111,16 +111,21 @@ function DadesSituacio() {
             </p>
 
           </div>
+          
 
 
           <div className="situacio-map">
 
-            <img
-              src="/mapagran.gif"
-              alt="Mapa de situació de Bell-lloc d'Urgell"
-            />
+  <iframe
+    src="https://www.google.com/maps?q=Bell-lloc+d'Urgell&output=embed"
+    title="Mapa de situació de Bell-lloc d'Urgell"
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  />
 
-          </div>
+</div>
+
+
 
         </section>
 

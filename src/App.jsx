@@ -13,6 +13,7 @@ import BellLlocSoluciona from './pages/BellLlocSoluciona'
 import Ciutadania from './pages/Ciutadania'
 import Activitats from './pages/Activitats'
 import Contacte from './pages/Contacte'
+import DadesSituacio from './pages/DadesSituacio'
 function App() {
   return (
     <>
@@ -65,6 +66,11 @@ function App() {
   element={<Contacte />}
 />
 
+   <Route
+  path="/municipi/dades-i-situacio"
+  element={<DadesSituacio />}
+/>
+   
         </Routes>
         
 
