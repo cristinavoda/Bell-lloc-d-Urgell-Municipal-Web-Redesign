@@ -1,0 +1,399 @@
+/* =========================================
+   SEU ELECTRÒNICA
+========================================= */
+
+.seu-electronica-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.seu-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.seu-intro {
+  max-width: 850px;
+
+  padding: 68px 0 70px;
+}
+
+.seu-intro h1 {
+  margin: 0 0 22px;
+
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.seu-intro p {
+  max-width: 720px;
+
+  margin: 0 0 30px;
+
+  color: var(--color-muted);
+
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+
+.seu-main-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 14px 21px;
+
+  background: var(--color-green);
+  color: #ffffff;
+
+  border-radius: 4px;
+
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.seu-main-button:hover {
+  background: var(--color-green-dark);
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   SECTION
+========================================= */
+
+.seu-section {
+  padding: 75px 0;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.seu-section-header {
+  margin-bottom: 32px;
+}
+
+.seu-section-header span {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: var(--color-green);
+
+  font-size: 0.76rem;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.seu-section-header h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.2;
+}
+
+
+/* =========================================
+   TRÀMITS
+========================================= */
+
+.seu-tramits {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.seu-tramit {
+  display: grid;
+  grid-template-columns: 52px 1fr 28px;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 25px 8px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  color: var(--color-text);
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.seu-tramit:last-child {
+  border-bottom: none;
+}
+
+.seu-tramit:hover {
+  padding-left: 16px;
+
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.seu-tramit-icon {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  color: var(--color-green);
+}
+
+.seu-tramit-content h3 {
+  margin: 0 0 6px;
+
+  font-size: 1.08rem;
+}
+
+.seu-tramit-content p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.seu-tramit-arrow {
+  color: var(--color-green);
+}
+
+
+/* =========================================
+   CARPETA ELECTRÒNICA
+========================================= */
+
+.seu-access-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.seu-access {
+  display: grid;
+  grid-template-columns: 28px 1fr 20px;
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 25px;
+
+  color: var(--color-text);
+
+  text-decoration: none;
+
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.seu-access:hover {
+  background: rgba(0, 0, 0, 0.025);
+  color: var(--color-green);
+}
+
+.seu-access h3 {
+  margin: 0 0 5px;
+
+  font-size: 1rem;
+}
+
+.seu-access p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.seu-access > svg:last-child {
+  justify-self: end;
+}
+
+
+/* =========================================
+   INFO
+========================================= */
+
+.seu-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.seu-info-grid a {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  min-height: 78px;
+
+  padding: 18px 22px;
+
+  color: var(--color-text);
+
+  text-decoration: none;
+
+  border-right: 1px solid var(--color-border);
+}
+
+.seu-info-grid a:last-child {
+  border-right: none;
+}
+
+.seu-info-grid a:hover {
+  color: var(--color-green);
+}
+
+
+/* =========================================
+   AVÍS
+========================================= */
+
+.seu-note {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+
+  margin: 55px 0 90px;
+
+  padding: 20px;
+
+  background: var(--color-green-soft);
+
+  color: var(--color-green-dark);
+}
+
+.seu-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.seu-note p {
+  margin: 0;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+  .seu-access-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seu-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seu-info-grid a {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .seu-info-grid a:last-child {
+    border-bottom: none;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .seu-container {
+    width: calc(100% - 32px);
+  }
+
+  .seu-intro {
+    padding: 48px 0 55px;
+  }
+
+  .seu-intro h1 {
+    font-size: clamp(2.2rem, 12vw, 3.2rem);
+  }
+
+  .seu-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .seu-main-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .seu-section {
+    padding: 58px 0;
+  }
+
+  .seu-tramit {
+    grid-template-columns: 44px 1fr 20px;
+
+    gap: 13px;
+
+    padding: 21px 2px;
+  }
+
+  .seu-tramit-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .seu-tramit-content h3 {
+    font-size: 0.98rem;
+  }
+
+  .seu-tramit-content p {
+    font-size: 0.84rem;
+  }
+
+  .seu-access {
+    grid-template-columns: 24px 1fr 18px;
+
+    padding: 20px 16px;
+  }
+
+  .seu-note {
+    margin-bottom: 60px;
+  }
+
+}

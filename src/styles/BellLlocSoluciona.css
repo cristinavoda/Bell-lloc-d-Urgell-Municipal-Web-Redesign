@@ -1,0 +1,327 @@
+/* =========================================
+   BELL-LLOC SOLUCIONA
+========================================= */
+
+.bell-lloc-soluciona-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.bell-lloc-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.soluciona-intro {
+  max-width: 820px;
+  padding: 68px 0 70px;
+}
+
+.soluciona-intro h1 {
+  margin: 0 0 22px;
+
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.soluciona-intro p {
+  max-width: 730px;
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.12rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   DESTACADO
+========================================= */
+
+.soluciona-feature {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 28px;
+
+  padding: 42px;
+
+  background: var(--color-green-soft);
+
+  border-left: 5px solid var(--color-green);
+}
+
+.soluciona-feature-icon {
+  width: 62px;
+  height: 62px;
+
+  display: grid;
+  place-items: center;
+
+  color: white;
+  background: var(--color-green);
+
+  border-radius: 50%;
+}
+
+.soluciona-feature-content > span {
+  display: block;
+  margin-bottom: 9px;
+
+  color: var(--color-green-dark);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.soluciona-feature-content h2 {
+  margin: 0 0 14px;
+
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.2;
+}
+
+.soluciona-feature-content p {
+  max-width: 720px;
+  margin: 0 0 24px;
+
+  color: var(--color-text-soft);
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.soluciona-primary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 13px 20px;
+
+ 
+  color: var(--color-green);
+  border-bottom: 2px solid var(--color-green);
+  width: 300px!important;
+
+  border-radius: 0px;
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.soluciona-primary-link:hover {
+  background: var(--color-green-dark);
+  color: #f1f3ef;
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   SEGUIMENT
+========================================= */
+
+.soluciona-sections {
+  padding: 85px 0 95px;
+}
+
+.soluciona-section-header {
+  margin-bottom: 32px;
+}
+
+.soluciona-section-header span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--color-green);
+
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.soluciona-section-header h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.soluciona-links {
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.soluciona-link {
+  display: grid;
+  grid-template-columns: 52px 1fr 24px;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 26px 8px;
+
+  color: var(--color-text);
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--color-border);
+
+  transition:
+    background-color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.soluciona-link:last-child {
+  border-bottom: none;
+}
+
+.soluciona-link:hover {
+  padding-left: 16px;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.soluciona-link-icon {
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  color: var(--color-green);
+}
+
+.soluciona-link-content h3 {
+  margin: 0 0 6px;
+
+  font-size: 1.08rem;
+}
+
+.soluciona-link-content p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.soluciona-link-arrow {
+  color: var(--color-green);
+}
+
+
+/* =========================================
+   INFO
+========================================= */
+
+.soluciona-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  margin-bottom: 90px;
+  padding: 22px;
+
+  background: #f1f3ef;
+
+  color: var(--color-green-dark);
+}
+
+.soluciona-info p {
+  margin: 0;
+
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .bell-lloc-container {
+    width: calc(100% - 32px);
+  }
+
+  .soluciona-intro {
+    padding: 48px 0 55px;
+  }
+
+  .soluciona-intro h1 {
+    font-size: clamp(2.2rem, 12vw, 3.2rem);
+  }
+
+  .soluciona-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .soluciona-feature {
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+    padding: 28px 22px;
+  }
+
+  .soluciona-feature-icon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .soluciona-primary-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .soluciona-sections {
+    padding: 60px 0 70px;
+  }
+
+  .soluciona-link {
+    grid-template-columns: 44px 1fr 20px;
+    gap: 13px;
+
+    padding: 22px 2px;
+  }
+
+  .soluciona-link-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .soluciona-link-content h3 {
+    font-size: 1rem;
+  }
+
+  .soluciona-link-content p {
+    font-size: 0.85rem;
+  }
+
+  .soluciona-info {
+    margin-bottom: 60px;
+  }
+
+}

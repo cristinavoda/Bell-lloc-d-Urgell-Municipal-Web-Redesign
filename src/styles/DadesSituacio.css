@@ -1,0 +1,374 @@
+/* =========================================
+   DADES I SITUACIÓ
+========================================= */
+
+.dades-situacio {
+  width: 100%;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.page-container {
+  width: min(1180px, 92%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.page-intro {
+  max-width: 820px;
+  padding: 68px 0 58px;
+}
+
+.section-eyebrow {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: var(--color-green);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.page-intro h1 {
+  margin: 0 0 24px;
+
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.page-intro p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   MUNICIPI EN XIFRES
+========================================= */
+
+.municipi-xifres {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.xifra {
+  min-height: 190px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 30px;
+
+  border-right: 1px solid var(--color-border);
+}
+
+.xifra:last-child {
+  border-right: none;
+}
+
+.xifra svg {
+  margin-bottom: 18px;
+
+  color: var(--color-green);
+}
+
+.xifra strong {
+  margin-bottom: 5px;
+
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 650;
+}
+
+.xifra span {
+  color: var(--color-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   SITUACIÓ
+========================================= */
+
+.situacio-section {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 70px;
+
+  padding: 90px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.situacio-text {
+  align-self: center;
+}
+
+.situacio-text h2,
+.clima-section h2,
+.related-section h2 {
+  margin: 0 0 24px;
+
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.situacio-text p {
+  margin: 0 0 18px;
+
+  color: var(--color-muted);
+
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.situacio-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   MAPA
+========================================= */
+
+.situacio-map {
+  width: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+
+  background: #f5f5f2;
+}
+
+.situacio-map img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  transition: transform 0.4s ease;
+}
+
+.situacio-map:hover img {
+  transform: scale(1.015);
+}
+
+
+/* =========================================
+   CLIMA
+========================================= */
+
+.clima-section {
+  max-width: 820px;
+
+  padding: 90px 0;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.clima-section p {
+  max-width: 760px;
+
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+
+/* =========================================
+   RELATED
+========================================= */
+
+.related-section {
+  padding: 90px 0 110px;
+}
+
+.related-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.related-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 90px;
+
+  padding: 20px 24px;
+
+  color: var(--color-text);
+  text-decoration: none;
+
+  border-right: 1px solid var(--color-border);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.related-links a:last-child {
+  border-right: none;
+}
+
+.related-links a:hover {
+  color: var(--color-green);
+
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .municipi-xifres {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xifra:nth-child(2) {
+    border-right: none;
+  }
+
+  .xifra:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .situacio-section {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .situacio-text {
+    max-width: 760px;
+  }
+
+  .related-links {
+    grid-template-columns: 1fr;
+  }
+
+  .related-links a {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .related-links a:last-child {
+    border-bottom: none;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .page-container {
+    width: min(100% - 32px, 1180px);
+  }
+
+  .page-intro {
+    padding: 48px 0 42px;
+  }
+
+  .page-intro h1 {
+    font-size: clamp(2.2rem, 12vw, 3.2rem);
+  }
+
+  .page-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+
+  /* XIFRES */
+
+  .municipi-xifres {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .xifra {
+    min-height: 150px;
+
+    padding: 22px 18px;
+  }
+
+  .xifra strong {
+    font-size: 1.55rem;
+  }
+
+  .xifra span {
+    font-size: 0.82rem;
+  }
+
+
+  /* SITUACIÓ */
+
+  .situacio-section {
+    padding: 60px 0;
+
+    gap: 35px;
+  }
+
+  .situacio-text h2,
+  .clima-section h2,
+  .related-section h2 {
+    font-size: 1.8rem;
+  }
+
+
+  /* CLIMA */
+
+  .clima-section {
+    padding: 60px 0;
+  }
+
+
+  /* RELATED */
+
+  .related-section {
+    padding: 60px 0 80px;
+  }
+
+}

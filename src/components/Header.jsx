@@ -75,11 +75,11 @@ const [searchOpen, setSearchOpen] = useState(false)
             Ajuntament
           </NavLink>
           
-          <NavLink to="/ajuntament" className="nav-link">
+          <NavLink to="/municipi" className="nav-link">
             Municipi
           </NavLink>
           
-          <NavLink to="/ajuntament" className="nav-link">
+          <NavLink to="/seu-electronica" className="nav-link">
             Seu Electronica
           </NavLink>
 
@@ -91,7 +91,7 @@ const [searchOpen, setSearchOpen] = useState(false)
             Activitats
           </NavLink>
 
-          <NavLink to="/actualitat" className="nav-link">
+          <NavLink to="/bell-lloc-soluciona" className="nav-link">
         Bell-lloc soluciona
           </NavLink>
            
@@ -182,12 +182,15 @@ const [searchOpen, setSearchOpen] = useState(false)
             Ajuntament
           </NavLink>
 
+         <NavLink
+  to="/municipi"
+  className="mobile-nav-link"
+  onClick={closeMenu}
+>
+  Municipi
+</NavLink>
           
-          <NavLink to="/ajuntament" className="mobile-nav-link">
-            Municipi
-          </NavLink>
-          
-          <NavLink to="/ajuntament" className="mobile-nav-link">
+          <NavLink to="/seu-electronica" className="mobile-nav-link">
             Seu Electronica
           </NavLink>
 
@@ -202,7 +205,7 @@ const [searchOpen, setSearchOpen] = useState(false)
          
 
            
-          <NavLink to="/actualitat" className="mobile-nav-link">
+          <NavLink to="/bell-lloc-soluciona" className="mobile-nav-link">
         Bell-lloc soluciona
           </NavLink>
            
