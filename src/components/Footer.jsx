@@ -2,8 +2,10 @@ import {
   MapPin,
   Phone,
   Mail,
+  Clock3,
   ArrowRight
 } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 import './Footer.css'
 
@@ -81,35 +83,71 @@ function Footer() {
 
 
         {/* CONTACTE */}
+{/* CONTACTE */}
 
-        <div className="footer-contact">
+<div className="footer-contact">
 
-          <h2>
-            Contacte
-          </h2>
+  <h2>
+    Contacte
+  </h2>
 
-          <p>
-            <MapPin size={18} aria-hidden="true" />
-            <span>
-              Bell-lloc d'Urgell
-            </span>
-          </p>
+  <p>
+    <MapPin
+      size={18}
+      strokeWidth={1.7}
+      aria-hidden="true"
+    />
 
-          <p>
-            <Phone size={18} aria-hidden="true" />
-            <span>
-              Telèfon de l'Ajuntament
-            </span>
-          </p>
+    <span>
+      Pl. Major, 8<br />
+      25220 Bell-lloc d'Urgell
+    </span>
+  </p>
 
-          <p>
-            <Mail size={18} aria-hidden="true" />
-            <span>
-              info@bell-lloc.cat
-            </span>
-          </p>
+  <p>
+    <Phone
+      size={18}
+      strokeWidth={1.7}
+      aria-hidden="true"
+    />
 
-        </div>
+    <a href="tel:+34973560100">
+      973 560 100
+    </a>
+  </p>
+
+  <p>
+    <Mail
+      size={18}
+      strokeWidth={1.7}
+      aria-hidden="true"
+    />
+
+    <a href="mailto:ajuntament@bell-lloc.cat">
+      ajuntament@bell-lloc.cat
+    </a>
+  </p>
+
+  <p className="footer-contact-hours">
+    <Clock3
+      size={18}
+      strokeWidth={1.7}
+      aria-hidden="true"
+    />
+
+    <span>
+      Dilluns a divendres · 8:00–14:00 h
+    </span>
+  </p>
+
+  <Link
+    to="/contacte"
+    className="footer-contact-link"
+  >
+    Més informació de contacte →
+  </Link>
+
+</div>
 
       </div>
 
