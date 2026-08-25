@@ -397,3 +397,166 @@
   }
 
 }
+/* =========================================
+   MOBILE - SEU ELECTRÒNICA
+========================================= */
+
+@media (max-width: 600px) {
+
+  .seu-electronica-page {
+    overflow-x: hidden;
+  }
+
+  .seu-container {
+    width: calc(100% - 32px);
+  }
+
+  /* INTRO */
+
+  .seu-intro {
+    padding: 42px 0 48px;
+  }
+
+  .seu-intro h1 {
+    font-size: clamp(2.15rem, 11vw, 3rem);
+    line-height: 1.05;
+  }
+
+  .seu-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .seu-main-button {
+    width: 100%;
+    min-height: 50px;
+
+    justify-content: center;
+
+    padding: 13px 16px;
+
+    text-align: center;
+  }
+
+
+  /* SECCIONES */
+
+  .seu-section {
+    padding: 52px 0;
+  }
+
+  .seu-section-header {
+    margin-bottom: 25px;
+  }
+
+  .seu-section-header h2 {
+    font-size: 1.75rem;
+  }
+
+
+  /* TRÀMITS */
+
+  .seu-tramit {
+    grid-template-columns: 42px minmax(0, 1fr) 20px;
+
+    gap: 13px;
+
+    padding: 20px 2px;
+  }
+
+  .seu-tramit-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .seu-tramit-content {
+    min-width: 0;
+  }
+
+  .seu-tramit-content h3 {
+    margin-bottom: 5px;
+
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .seu-tramit-content p {
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+  .seu-tramit-arrow {
+    width: 18px;
+    height: 18px;
+  }
+
+
+  /* CARPETA ELECTRÒNICA */
+
+  .seu-access-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    border-left: none;
+  }
+
+  .seu-access {
+    grid-template-columns: 24px minmax(0, 1fr) 18px;
+
+    gap: 13px;
+
+    padding: 20px 2px;
+  }
+
+  .seu-access h3 {
+    font-size: 0.98rem;
+    line-height: 1.35;
+  }
+
+  .seu-access p {
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+
+
+  /* ENLLAÇOS D'INFORMACIÓ */
+
+  .seu-info-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    border-left: none;
+  }
+
+  .seu-info-grid a {
+    min-height: 64px;
+
+    padding: 17px 2px;
+
+    border-right: none;
+
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .seu-info-grid a:last-child {
+    border-bottom: none;
+  }
+
+
+  /* AVÍS */
+
+  .seu-note {
+    margin: 42px 0 60px;
+
+    padding: 18px;
+
+    gap: 12px;
+  }
+
+  .seu-note p {
+    font-size: 0.86rem;
+  }
+
+}
