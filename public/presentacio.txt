@@ -1,4 +1,34 @@
 presentacio
 
 
-"El redisseny no parteix només d'una renovació visual, sinó d'una reorganització de la informació basada en les necessitats reals de la ciutadania i en el coneixement del municipi."
+"El redisseny no parteix només d'una renovació visual, sinó d'una reorganització de la informació basada en les necessitats reals de la ciutadania i en el coneixement del municipi.""He analitzat la informació existent i he intentat reorganitzar-la des del punt de vista de la ciutadania."
+
+Y después mostraría tres ejemplos.
+
+1. Una persona busca una actividad.
+
+Activitats → filtres → Agenda
+
+2. Una persona tiene un problema en la calle.
+
+Bell-lloc Soluciona → Comunicar problema
+
+3. Una persona necesita un trámite.
+
+Seu electrònica → tràmit concret
+
+Y luego:
+
+"La informació continua existint; el que canvia és la manera d'arribar-hi."
+
+
+
+Proposta de redisseny i millora de la web municipal
+
+Eso ya comunica que has preparado algo serio.
+
+🏛️ Yo seguiría este camino
+
+Primero: pregunta discretamente a tu conocido:
+
+"He preparat una proposta de redisseny de la web municipal, enfocada sobretot a accessibilitat, navegació i serveis per a la ciutadania. Saps quina és la millor manera de presentar una iniciativa d'aquest tipus a l'Ajuntament?"

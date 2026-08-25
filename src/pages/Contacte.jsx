@@ -3,7 +3,7 @@ import {
   Phone,
   Mail,
   Clock3,
-  Send,
+  
 } from 'lucide-react'
 
 import BreadCrumb from '../components/BreadCrumb'
@@ -227,7 +227,7 @@ function Contacte() {
             type="submit"
             className="contacte-submit"
           >
-            Enviar mensaje
+            Envia missatge
           </button>
 
         </form>
