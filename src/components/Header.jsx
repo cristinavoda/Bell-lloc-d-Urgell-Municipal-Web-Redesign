@@ -189,10 +189,17 @@ const [searchOpen, setSearchOpen] = useState(false)
 >
   Municipi
 </NavLink>
-          
-          <NavLink to="/seu-electronica" className="mobile-nav-link">
-            Seu Electronica
-          </NavLink>
+        
+        <NavLink
+  to="/seu-electronica"
+  className="mobile-nav-link"
+  onClick={() => {
+    closeMenu()
+  }}
+>
+  Seu electrònica
+</NavLink>
+
 
           <NavLink
             to="/ciutadania"
