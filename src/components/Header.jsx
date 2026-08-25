@@ -212,15 +212,22 @@ const [searchOpen, setSearchOpen] = useState(false)
           </NavLink>
          
 
-           
-          <NavLink to="/bell-lloc-soluciona" className="mobile-nav-link">
-        Bell-lloc soluciona
-          </NavLink>
-           
-          <NavLink to="/contacte" className="mobile-nav-link">
-         Contacte
-          </NavLink>
+     <NavLink
+  to="/bell-lloc-soluciona"
+  className="mobile-nav-link"
+  onClick={closeMenu}
+>
+  Bell-lloc Soluciona
+</NavLink>
 
+<NavLink
+  to="/contacte"
+  className="mobile-nav-link"
+  onClick={closeMenu}
+>
+  Contacte
+</NavLink>
+         
 <button
   type="button"
   className="search-button"
