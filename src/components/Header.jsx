@@ -151,20 +151,11 @@ const [searchOpen, setSearchOpen] = useState(false)
 <div className="mobile-sidebar-info">
 
   
-  <div className="mobile-sidebar-weather">
-    <CloudSun
-      size={18}
-      strokeWidth={1.7}
-      aria-hidden="true"
-    />
-
-    <div>
-      <strong>35° / 19°</strong>
-      <span>Dimarts, 25 d'agost</span>
-    </div>
-  </div>
+  
 
 </div>
+
+
           <button
             type="button"
             className="mobile-close"
@@ -176,7 +167,18 @@ const [searchOpen, setSearchOpen] = useState(false)
 
         </div>
 
+<div className="mobile-sidebar-weather">
+    <CloudSun
+      size={18}
+      strokeWidth={1.7}
+      aria-hidden="true"
+    />
 
+    <div>
+      <strong>35° / 19°</strong>
+      <span>Dimarts, 25 d'agost</span>
+    </div>
+  </div>
         <nav
           className="mobile-nav"
           aria-label="Navegació mòbil"
@@ -250,7 +252,11 @@ const [searchOpen, setSearchOpen] = useState(false)
 >
   Contacte
 </NavLink>
-         
+
+
+
+
+
 <button
   type="button"
   className="search-button"
@@ -263,7 +269,7 @@ const [searchOpen, setSearchOpen] = useState(false)
   <Search size={20} strokeWidth={1.8} />
 </button>
 
-        </nav>
+ </nav>
           </aside>
 
   <SearchOverlay
