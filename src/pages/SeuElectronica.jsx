@@ -152,50 +152,38 @@ function SeuElectronica() {
 
 
           <div className="seu-tramits">
+         {tramitsDestacats.map((item) => (
 
-            {tramitsDestacats.map((item) => {
+  <a
+    key={item.title}
+    href={item.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="seu-tramit"
+  >
 
-              const Icon = item.icon
+    <div className="seu-tramit-content">
 
-              return (
-                <a
-                  key={item.title}
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="seu-tramit"
-                >
+      <h3>
+        {item.title}
+      </h3>
 
-                  <div className="seu-tramit-icon">
-                    <Icon
-                      size={23}
-                      strokeWidth={1.7}
-                    />
-                  </div>
+      <p>
+        {item.description}
+      </p>
 
-                  <div className="seu-tramit-content">
+    </div>
 
-                    <h3>
-                      {item.title}
-                    </h3>
-
-                    <p>
-                      {item.description}
-                    </p>
-
-                  </div>
-
-                  <ExternalLink
-                    className="seu-tramit-arrow"
-                    size={19}
-                    strokeWidth={1.7}
-                    aria-hidden="true"
-                  />
-
-                </a>
-              )
-            })}
-
+    
+<span
+  className="seu-tramit-arrow"
+  aria-hidden="true"
+>
+  →
+</span>
+  </a>
+))}
+            
           </div>
 
         </section>
@@ -213,43 +201,41 @@ function SeuElectronica() {
             </h2>
           </div>
 
+<div className="seu-access-grid">
 
-          <div className="seu-access-grid">
+  {accessosElectroniques.map((item) => (
 
-            {accessosElectroniques.map((item) => {
+    <a
+      key={item.title}
+      href={item.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="seu-access"
+    >
 
-              const Icon = item.icon
+      <div>
+        <h3>
+          {item.title}
+        </h3>
 
-              return (
-                <a
-                  key={item.title}
-                  href={item.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="seu-access"
-                >
+        <p>
+          {item.description}
+        </p>
+      </div>
 
-                  <Icon
-                    size={22}
-                    strokeWidth={1.7}
-                  />
+      <span
+        className="seu-access-arrow"
+        aria-hidden="true"
+      >
+        →
+      </span>
 
-                  <div>
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
+    </a>
 
-                  <ExternalLink
-                    size={17}
-                    strokeWidth={1.7}
-                    aria-hidden="true"
-                  />
+  ))}
 
-                </a>
-              )
-            })}
-
-          </div>
+</div>
+          
 
         </section>
 
@@ -258,51 +244,66 @@ function SeuElectronica() {
 
         <section className="seu-info-grid">
 
-          <a
-            href="https://bell-lloc.eadministracio.cat/official-time"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <ClockIcon />
-            <span>
-              Data i hora oficial
-            </span>
-          </a>
+  <a
+    href="https://bell-lloc.eadministracio.cat/official-time"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>
+      Data i hora oficial
+    </span>
 
-          <a
-            href="https://bell-lloc.eadministracio.cat/accessibility"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <AccessibilityIcon />
-            <span>
-              Accessibilitat
-            </span>
-          </a>
+    <span
+      className="seu-info-arrow"
+      aria-hidden="true"
+    >
+      →
+    </span>
+  </a>
 
-          <a
-            href="https://bell-lloc.eadministracio.cat/faqs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <HelpCircle size={21} strokeWidth={1.7} />
-            <span>
-              Preguntes freqüents
-            </span>
-          </a>
 
-        </section>
+  <a
+    href="https://bell-lloc.eadministracio.cat/accessibility"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>
+      Accessibilitat
+    </span>
 
+    <span
+      className="seu-info-arrow"
+      aria-hidden="true"
+    >
+      →
+    </span>
+  </a>
+
+
+  <a
+    href="https://bell-lloc.eadministracio.cat/faqs"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <span>
+      Preguntes freqüents
+    </span>
+
+    <span
+      className="seu-info-arrow"
+      aria-hidden="true"
+    >
+      →
+    </span>
+  </a>
+
+</section>
 
         {/* AVÍS */}
 
         <section className="seu-note">
 
-          <ShieldCheck
-            size={22}
-            strokeWidth={1.7}
-          />
-
+          
           <p>
             Els tràmits electrònics es realitzen a través
             de la Seu electrònica oficial de l’Ajuntament
@@ -318,18 +319,8 @@ function SeuElectronica() {
 }
 
 
-/*
-  Petits components per evitar imports addicionals
-  només per a la demo.
-*/
 
-function ClockIcon() {
-  return <Euro size={21} strokeWidth={1.7} />
-}
 
-function AccessibilityIcon() {
-  return <ShieldCheck size={21} strokeWidth={1.7} />
-}
 
 
 export default SeuElectronica

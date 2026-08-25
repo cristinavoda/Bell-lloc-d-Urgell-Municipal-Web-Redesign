@@ -1,7 +1,6 @@
 /* =========================================
-   AJUNTAMENT
+   ITEM
 ========================================= */
-
 .ajuntament-page {
   width: 100%;
   min-height: 100vh;
@@ -66,45 +65,16 @@
 }
 
 
-/* =========================================
-   SECTIONS
-========================================= */
-
-.ajuntament-sections {
-  padding: 70px 0 110px;
-}
-
-
-/* =========================================
-   GRID
-========================================= */
-
-.ajuntament-grid {
-  display: grid;
-
-  grid-template-columns: repeat(2, 1fr);
-
-  border-top: 1px solid var(--color-border);
-  border-left: 1px solid var(--color-border);
-}
-
-
-/* =========================================
-   ITEM
-========================================= */
-
 .ajuntament-item {
-  position: relative;
-
   display: grid;
 
-  grid-template-columns: 54px 1fr 30px;
+  grid-template-columns: 1fr 30px;
 
-  align-items: start;
+  align-items: center;
 
-  gap: 20px;
+  gap: 25px;
 
-  min-height: 175px;
+  min-height: 145px;
 
   padding: 30px;
 
@@ -116,31 +86,7 @@
 
   transition:
     background-color 0.25s ease,
-    color 0.25s ease;
-}
-
-
-/* =========================================
-   ICON
-========================================= */
-
-.ajuntament-item-icon {
-  width: 52px;
-  height: 52px;
-
-  display: grid;
-  place-items: center;
-
-  border: 1px solid var(--color-border);
-
-  border-radius: 50%;
-
-  color: var(--color-green);
-
-  transition:
-    background-color 0.25s ease,
-    border-color 0.25s ease,
-    color 0.25s ease;
+    padding-left 0.25s ease;
 }
 
 
@@ -149,9 +95,9 @@
 ========================================= */
 
 .ajuntament-item-content h2 {
-  margin: 2px 0 10px;
+  margin: 0 0 9px;
 
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   line-height: 1.3;
 
   font-weight: 650;
@@ -174,11 +120,11 @@
 ========================================= */
 
 .ajuntament-item-arrow {
-  align-self: center;
+  justify-self: end;
 
   color: var(--color-muted);
 
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 
   transition:
     transform 0.25s ease,
@@ -193,15 +139,7 @@
 .ajuntament-item:hover {
   background: rgba(0, 0, 0, 0.025);
 
-  color: var(--color-green);
-}
-
-.ajuntament-item:hover .ajuntament-item-icon {
-  background: var(--color-green);
-
-  border-color: var(--color-green);
-
-  color: white;
+  padding-left: 36px;
 }
 
 .ajuntament-item:hover .ajuntament-item-arrow {
@@ -209,69 +147,16 @@
 
   transform: translateX(5px);
 }
-
-.ajuntament-item:hover .ajuntament-item-content p {
-  color: var(--color-text);
-}
-
-
-/* =========================================
-   TABLET
-========================================= */
-
-@media (max-width: 850px) {
-
-  .ajuntament-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .ajuntament-item {
-    min-height: 155px;
-  }
-
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
 @media (max-width: 600px) {
 
-  .ajuntament-container {
-    width: min(100% - 32px, 1180px);
-  }
-
-  .ajuntament-intro {
-    padding: 48px 0 45px;
-  }
-
-  .ajuntament-intro h1 {
-    font-size: clamp(2.3rem, 12vw, 3.2rem);
-  }
-
-  .ajuntament-intro p {
-    font-size: 1rem;
-    line-height: 1.7;
-  }
-
-  .ajuntament-sections {
-    padding: 45px 0 70px;
-  }
-
   .ajuntament-item {
-    grid-template-columns: 46px 1fr 20px;
+    grid-template-columns: 1fr 20px;
 
-    gap: 14px;
+    gap: 15px;
 
     min-height: auto;
 
     padding: 22px 18px;
-  }
-
-  .ajuntament-item-icon {
-    width: 44px;
-    height: 44px;
   }
 
   .ajuntament-item-content h2 {
@@ -283,8 +168,8 @@
     line-height: 1.55;
   }
 
-  .ajuntament-item-arrow {
-    font-size: 1.1rem;
+  .ajuntament-item:hover {
+    padding-left: 22px;
   }
 
 }

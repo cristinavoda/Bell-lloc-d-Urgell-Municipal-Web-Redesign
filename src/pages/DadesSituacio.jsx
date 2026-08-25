@@ -1,4 +1,3 @@
-import { MapPin, Users, Ruler, Building2 } from 'lucide-react'
 
 import BreadCrumb from '../components/BreadCrumb'
 
@@ -44,44 +43,29 @@ function DadesSituacio() {
 
         {/* XIFRES */}
 
-        <section className="municipi-xifres">
+       <section className="municipi-xifres">
 
-          <div className="xifra">
-            <Users size={24} strokeWidth={1.6} />
+  <div className="xifra">
+    <strong>2.347</strong>
+    <span>habitants</span>
+  </div>
 
-            <strong>2.347</strong>
+  <div className="xifra">
+    <strong>34,90</strong>
+    <span>km² de superfície</span>
+  </div>
 
-            <span>habitants</span>
-          </div>
+  <div className="xifra">
+    <strong>196 m</strong>
+    <span>d'altitud</span>
+  </div>
 
+  <div className="xifra">
+    <strong>14 km</strong>
+    <span>de Lleida</span>
+  </div>
 
-          <div className="xifra">
-            <Ruler size={24} strokeWidth={1.6} />
-
-            <strong>34,90</strong>
-
-            <span>km² de superfície</span>
-          </div>
-
-
-          <div className="xifra">
-            <Building2 size={24} strokeWidth={1.6} />
-
-            <strong>196 m</strong>
-
-            <span>d'altitud</span>
-          </div>
-
-
-          <div className="xifra">
-            <MapPin size={24} strokeWidth={1.6} />
-
-            <strong>14 km</strong>
-
-            <span>de Lleida</span>
-          </div>
-
-        </section>
+</section>
 
 
         {/* SITUACIÓ */}
@@ -132,24 +116,33 @@ function DadesSituacio() {
 
         {/* CLIMA */}
 
-        <section className="clima-section">
 
-          <span className="section-eyebrow">
-            ENTORN
-          </span>
+<section className="clima-section">
 
-          <h2>Clima i paisatge</h2>
+  <span className="section-eyebrow">
+    ENTORN
+  </span>
 
-          <p>
-            La situació del municipi, en plena plana i
-            propera al riu Segre, determina un clima
-            mediterrani continental, amb estius calorosos
-            i secs i hiverns freds i humits.
-          </p>
+  <h2>Clima i paisatge</h2>
 
-        </section>
+  <p>
+    La situació del municipi, en plena plana i
+    propera al riu Segre, determina un clima
+    mediterrani continental, amb estius calorosos
+    i secs i hiverns freds i humits.
+  </p>
 
+  <div className="clima-image">
 
+    <img
+      src="/plana.jpg"
+      alt="Paisatge de la plana de Bell-lloc d'Urgell"
+      loading="lazy"
+    />
+
+  </div>
+
+</section>
         {/* NAVEGACIÓ RELACIONADA */}
 
         <section className="related-section">

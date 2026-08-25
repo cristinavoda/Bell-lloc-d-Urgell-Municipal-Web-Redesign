@@ -46,7 +46,7 @@
 
 .logo-text strong {
     font-family: "Roboto Slab" ;
-  color: rgba(15, 68, 15, 0.753)!important;
+  color:  #245C3A!important;
   font-size: 1.3rem!important;
   font-weight: 700;
   letter-spacing: -0.02em;
@@ -55,9 +55,6 @@
 }
 
 
-/* ========================================
-   DESKTOP NAVIGATION
-======================================== */
 
 .main-nav {
   display: flex;

@@ -52,8 +52,8 @@
 
   padding: 14px 21px;
 
-  background: var(--color-green);
-  color: #ffffff;
+  background: transparent;
+  color: var(--color-green);
 
   border-radius: 4px;
 
@@ -65,10 +65,11 @@
   transition:
     background-color 0.2s ease,
     transform 0.2s ease;
+    border-bottom: 1px solid var(--color-green)!important;
 }
 
 .seu-main-button:hover {
-  background: var(--color-green-dark);
+  background: rgb(245, 242, 242);
   transform: translateY(-1px);
 }
 
@@ -111,6 +112,9 @@
 /* =========================================
    TRÀMITS
 ========================================= */
+/* =========================================
+   TRÀMITS
+========================================= */
 
 .seu-tramits {
   border-top: 1px solid var(--color-border);
@@ -119,17 +123,18 @@
 
 .seu-tramit {
   display: grid;
-  grid-template-columns: 52px 1fr 28px;
+
+  grid-template-columns: 1fr 28px;
+
   align-items: center;
 
-  gap: 20px;
+  gap: 25px;
 
   padding: 25px 8px;
 
   border-bottom: 1px solid var(--color-border);
 
   color: var(--color-text);
-
   text-decoration: none;
 
   transition:
@@ -147,26 +152,21 @@
   background: rgba(0, 0, 0, 0.025);
 }
 
-.seu-tramit-icon {
-  width: 46px;
-  height: 46px;
 
-  display: grid;
-  place-items: center;
-
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-
-  color: var(--color-green);
-}
+/* =========================================
+   CONTENIDO
+========================================= */
 
 .seu-tramit-content h3 {
   margin: 0 0 6px;
 
   font-size: 1.08rem;
+  line-height: 1.35;
 }
 
 .seu-tramit-content p {
+  max-width: 760px;
+
   margin: 0;
 
   color: var(--color-muted);
@@ -175,8 +175,21 @@
   line-height: 1.55;
 }
 
+
+/* =========================================
+   FLECHA
+========================================= */
+
 .seu-tramit-arrow {
+  justify-self: end;
+
   color: var(--color-green);
+
+  transition: transform 0.2s ease;
+}
+
+.seu-tramit:hover .seu-tramit-arrow {
+  transform: translateX(5px);
 }
 
 
@@ -184,25 +197,17 @@
    CARPETA ELECTRÒNICA
 ========================================= */
 
-.seu-access-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-
-  border-top: 1px solid var(--color-border);
-  border-left: 1px solid var(--color-border);
-}
-
 .seu-access {
   display: grid;
-  grid-template-columns: 28px 1fr 20px;
+  grid-template-columns: 1fr 24px;
+
   align-items: center;
 
-  gap: 16px;
+  gap: 20px;
 
   padding: 25px;
 
   color: var(--color-text);
-
   text-decoration: none;
 
   border-right: 1px solid var(--color-border);
@@ -215,7 +220,6 @@
 
 .seu-access:hover {
   background: rgba(0, 0, 0, 0.025);
-  color: var(--color-green);
 }
 
 .seu-access h3 {
@@ -233,13 +237,25 @@
   line-height: 1.5;
 }
 
-.seu-access > svg:last-child {
+.seu-access-arrow {
   justify-self: end;
+
+  color: var(--color-green);
+
+  font-size: 1.25rem;
+
+  transition: transform 0.2s ease;
 }
 
+.seu-access:hover .seu-access-arrow {
+  transform: translateX(5px);
+}
 
 /* =========================================
    INFO
+========================================= */
+/* =========================================
+   INFORMACIÓ
 ========================================= */
 
 .seu-info-grid {
@@ -253,17 +269,20 @@
 .seu-info-grid a {
   display: flex;
   align-items: center;
-  gap: 11px;
+  justify-content: space-between;
 
   min-height: 78px;
 
   padding: 18px 22px;
 
   color: var(--color-text);
-
   text-decoration: none;
 
   border-right: 1px solid var(--color-border);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .seu-info-grid a:last-child {
@@ -271,10 +290,22 @@
 }
 
 .seu-info-grid a:hover {
+  background: rgba(0, 0, 0, 0.025);
+
   color: var(--color-green);
 }
 
+.seu-info-arrow {
+  color: var(--color-green);
 
+  font-size: 1.15rem;
+
+  transition: transform 0.2s ease;
+}
+
+.seu-info-grid a:hover .seu-info-arrow {
+  transform: translateX(5px);
+}
 /* =========================================
    AVÍS
 ========================================= */
@@ -307,35 +338,33 @@
 }
 
 
-/* =========================================
-   TABLET
-========================================= */
-
 @media (max-width: 850px) {
 
   .seu-access-grid {
     grid-template-columns: 1fr;
   }
 
-  .seu-info-grid {
-    grid-template-columns: 1fr;
+}
+
+@media (max-width: 600px) {
+
+  .seu-access {
+    grid-template-columns: 1fr 20px;
+
+    gap: 14px;
+
+    padding: 20px 2px;
   }
 
-  .seu-info-grid a {
-    border-right: none;
-    border-bottom: 1px solid var(--color-border);
+  .seu-access h3 {
+    font-size: 0.98rem;
   }
 
-  .seu-info-grid a:last-child {
-    border-bottom: none;
+  .seu-access p {
+    font-size: 0.84rem;
   }
 
 }
-
-
-/* =========================================
-   MOBILE
-========================================= */
 
 @media (max-width: 600px) {
 
@@ -365,26 +394,7 @@
     padding: 58px 0;
   }
 
-  .seu-tramit {
-    grid-template-columns: 44px 1fr 20px;
-
-    gap: 13px;
-
-    padding: 21px 2px;
-  }
-
-  .seu-tramit-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .seu-tramit-content h3 {
-    font-size: 0.98rem;
-  }
-
-  .seu-tramit-content p {
-    font-size: 0.84rem;
-  }
+  
 
   .seu-access {
     grid-template-columns: 24px 1fr 18px;
@@ -456,96 +466,26 @@
 
   /* TRÀMITS */
 
-  .seu-tramit {
-    grid-template-columns: 42px minmax(0, 1fr) 20px;
-
-    gap: 13px;
-
-    padding: 20px 2px;
-  }
-
-  .seu-tramit-icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .seu-tramit-content {
-    min-width: 0;
-  }
-
-  .seu-tramit-content h3 {
-    margin-bottom: 5px;
-
-    font-size: 0.98rem;
-    line-height: 1.35;
-  }
-
-  .seu-tramit-content p {
-    font-size: 0.84rem;
-    line-height: 1.5;
-  }
-
-  .seu-tramit-arrow {
-    width: 18px;
-    height: 18px;
-  }
-
-
-  /* CARPETA ELECTRÒNICA */
-
-  .seu-access-grid {
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    border-left: none;
-  }
-
+  
   .seu-access {
-    grid-template-columns: 24px minmax(0, 1fr) 18px;
+    grid-template-columns: 1fr 20px;
 
-    gap: 13px;
+    gap: 14px;
 
     padding: 20px 2px;
   }
 
   .seu-access h3 {
     font-size: 0.98rem;
-    line-height: 1.35;
   }
 
   .seu-access p {
     font-size: 0.84rem;
-    line-height: 1.5;
   }
 
 
-  /* ENLLAÇOS D'INFORMACIÓ */
 
-  .seu-info-grid {
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    border-left: none;
-  }
-
-  .seu-info-grid a {
-    min-height: 64px;
-
-    padding: 17px 2px;
-
-    border-right: none;
-
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .seu-info-grid a:last-child {
-    border-bottom: none;
-  }
-
-
-  /* AVÍS */
+  
 
   .seu-note {
     margin: 42px 0 60px;

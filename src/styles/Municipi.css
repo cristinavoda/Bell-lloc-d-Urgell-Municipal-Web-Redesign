@@ -1,6 +1,4 @@
-/* =========================================
-   MUNICIPI
-========================================= */
+
 
 .municipi-page {
   width: 100%;
@@ -9,9 +7,7 @@
 }
 
 
-/* =========================================
-   CONTAINER
-========================================= */
+
 
 .municipi-container {
   width: min(1180px, 92%);
@@ -19,9 +15,6 @@
 }
 
 
-/* =========================================
-   INTRO
-========================================= */
 
 .municipi-intro {
   max-width: 780px;
@@ -63,9 +56,7 @@
 }
 
 
-/* =========================================
-   SECTION HEADING
-========================================= */
+
 
 .municipi-section-heading {
   padding-bottom: 26px;
@@ -117,27 +108,8 @@
 }
 
 
-/* =========================================
-   ICON
-========================================= */
-
-.municipi-link-icon {
-  width: 48px;
-  height: 48px;
-
-  display: grid;
-  place-items: center;
-
-  color: var(--color-green);
-
-  border: 1px solid var(--color-border);
-  border-radius: 50%;
-}
 
 
-/* =========================================
-   CONTENT
-========================================= */
 
 .municipi-link-content h3 {
   margin: 0 0 5px;
@@ -156,9 +128,7 @@
 }
 
 
-/* =========================================
-   ARROW
-========================================= */
+
 
 .municipi-link-arrow {
   color: var(--color-green);
@@ -174,10 +144,70 @@
 }
 
 
-/* =========================================
-   MOBILE
-========================================= */
 
+.municipi-link {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+
+  align-items: center;
+  gap: 25px;
+
+  padding: 26px 8px;
+
+  color: var(--color-text);
+  text-decoration: none;
+
+  border-bottom: 1px solid var(--color-border);
+
+  transition:
+    background-color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.municipi-link:last-child {
+  border-bottom: none;
+}
+
+.municipi-link:hover {
+  padding-left: 16px;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.municipi-link-content h2 {
+  margin: 0 0 6px;
+
+  font-size: 1.1rem;
+  line-height: 1.3;
+  font-weight: 650;
+}
+
+.municipi-link-content p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.municipi-link-arrow {
+  justify-self: end;
+
+  color: var(--color-muted);
+
+  font-size: 1.35rem;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.municipi-link:hover .municipi-link-arrow {
+  color: var(--color-green);
+  transform: translateX(5px);
+}
 @media (max-width: 700px) {
 
   .municipi-intro {
@@ -188,27 +218,21 @@
     font-size: 1rem;
     line-height: 1.7;
   }
-
-  .municipi-link {
-    grid-template-columns: 46px 1fr auto;
-    gap: 14px;
-
-    padding: 22px 2px;
+.municipi-link {
+    grid-template-columns: 1fr 20px;
+    gap: 15px;
+    padding: 21px 2px;
   }
 
-  .municipi-link-icon {
-    width: 42px;
-    height: 42px;
-  }
-
-  .municipi-link-content h3 {
+  .municipi-link-content h2 {
     font-size: 1rem;
   }
 
   .municipi-link-content p {
-    font-size: 0.88rem;
+    font-size: 0.86rem;
   }
 
+  
   .municipi-link-arrow {
     font-size: 1.3rem;
   }
