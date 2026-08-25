@@ -11,6 +11,8 @@ import SeuElectronica from './pages/SeuElectronica'
 import BellLlocSoluciona from './pages/BellLlocSoluciona'
 
 import Ciutadania from './pages/Ciutadania'
+import Activitats from './pages/Activitats'
+import Contacte from './pages/Contacte'
 function App() {
   return (
     <>
@@ -45,11 +47,29 @@ function App() {
   element={<BellLlocSoluciona />}
 />
 
+
+
 <Route
   path="/ciutadania"
   element={<Ciutadania />}
 />
+
+
+<Route
+  path="/activitats"
+  element={<Activitats />}
+/>
+
+<Route
+  path="/contacte"
+  element={<Contacte />}
+/>
+
         </Routes>
+        
+
+
+        
       </main>
 
       <Footer />

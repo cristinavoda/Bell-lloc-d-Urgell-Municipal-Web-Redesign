@@ -95,8 +95,8 @@ const [searchOpen, setSearchOpen] = useState(false)
         Bell-lloc soluciona
           </NavLink>
            
-          <NavLink to="/actualitat" className="nav-link">
-         Contacto
+          <NavLink to="/contacte" className="nav-link">
+         Contacte
           </NavLink>
         </nav>
 
@@ -202,6 +202,14 @@ const [searchOpen, setSearchOpen] = useState(false)
             Ciutadania
           </NavLink>
 
+
+          <NavLink
+            to="/activitats"
+            className="mobile-nav-link"
+            onClick={closeMenu}
+          >
+            Activitats
+          </NavLink>
          
 
            
@@ -209,8 +217,8 @@ const [searchOpen, setSearchOpen] = useState(false)
         Bell-lloc soluciona
           </NavLink>
            
-          <NavLink to="/actualitat" className="mobile-nav-link">
-         Contacto
+          <NavLink to="/contacte" className="mobile-nav-link">
+         Contacte
           </NavLink>
 
 <button
