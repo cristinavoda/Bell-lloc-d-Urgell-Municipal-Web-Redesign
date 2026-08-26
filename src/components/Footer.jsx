@@ -2,8 +2,7 @@ import {
   MapPin,
   Phone,
   Mail,
-  Clock3,
-  ArrowRight
+  Clock3
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -152,7 +151,7 @@ function Footer() {
       </div>
 
 
-      {/* FOOTER BOTTOM */}
+      
 
       <div className="footer-bottom">
 

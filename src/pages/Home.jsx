@@ -2,23 +2,13 @@ import Hero from '../components/Hero'
 import './Home.css'
 import PregoAvisos from '../components/PregoAvisos'
 import NewsSection from '../components/NewsSection'
-import Breadcrumb from '../components/BreadCrumb'
+
 function Home() {
   return (
     <div className="home">
 
       <Hero />
-<Breadcrumb
-  items={[
-    {
-      label: 'Municipi',
-      path: '/municipi',
-    },
-    {
-      label: 'Dades i situació',
-    },
-  ]}
-/>
+
        <PregoAvisos />
 
    <NewsSection />

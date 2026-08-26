@@ -22,7 +22,6 @@ function DadesSituacio() {
         />
 
 
-        {/* INTRO */}
 
         <section className="page-intro">
 
@@ -41,7 +40,7 @@ function DadesSituacio() {
         </section>
 
 
-        {/* XIFRES */}
+       
 
        <section className="municipi-xifres">
 
@@ -68,7 +67,7 @@ function DadesSituacio() {
 </section>
 
 
-        {/* SITUACIÓ */}
+        
 
         <section className="situacio-section">
 
@@ -114,7 +113,7 @@ function DadesSituacio() {
         </section>
 
 
-        {/* CLIMA */}
+        
 
 
 <section className="clima-section">
@@ -143,7 +142,7 @@ function DadesSituacio() {
   </div>
 
 </section>
-        {/* NAVEGACIÓ RELACIONADA */}
+        
 
         <section className="related-section">
 

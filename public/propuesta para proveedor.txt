@@ -1,0 +1,21 @@
+  "La Seu electrònica és funcional, però la seva capçalera actual presenta problemes d'adaptació en dispositius mòbils. La nova web municipal simplificaria l'accés als tràmits i conduiria cada ciutadà directament al tràmit corresponent.".banner {
+  min-height: auto;
+}
+
+.banner > div {
+  padding: 1.5rem;
+}
+
+.banner img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 640px) {
+  .banner {
+    background-position: center;
+    background-size: cover;
+  }
+}

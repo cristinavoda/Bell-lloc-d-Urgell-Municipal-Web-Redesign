@@ -28,7 +28,7 @@ const [searchOpen, setSearchOpen] = useState(false)
     }
   }, [])
 
-  // Bloquear scroll cuando el menú está abierto
+  
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : ''
 
@@ -42,7 +42,7 @@ const [searchOpen, setSearchOpen] = useState(false)
 
       <div className="header-container">
 
-        {/* LOGO */}
+        
         <NavLink
           to="/"
           className="site-logo"
@@ -62,7 +62,7 @@ const [searchOpen, setSearchOpen] = useState(false)
         </NavLink>
 
 
-        {/* DESKTOP NAV */}
+       
         <nav
           className="main-nav"
           aria-label="Navegació principal"
@@ -128,7 +128,7 @@ const [searchOpen, setSearchOpen] = useState(false)
       </div>
 
 <UtilityBar />
-      {/* OVERLAY */}
+    
 
       <div
         className={`mobile-overlay ${menuOpen ? 'open' : ''}`}
@@ -137,7 +137,7 @@ const [searchOpen, setSearchOpen] = useState(false)
       />
 
 
-      {/* MOBILE SIDEBAR */}
+      
 
       <aside
         id="mobile-navigation"

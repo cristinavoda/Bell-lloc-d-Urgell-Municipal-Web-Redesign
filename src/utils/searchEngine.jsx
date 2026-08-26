@@ -1,9 +1,6 @@
 import searchData from '../data/searchData'
 
 
-// ─────────────────────────────────────────────
-// NORMALIZAR TEXTO
-// ─────────────────────────────────────────────
 
 function normalizeText(text = '') {
   return text
@@ -15,9 +12,6 @@ function normalizeText(text = '') {
 }
 
 
-// ─────────────────────────────────────────────
-// DIVIDIR LA BÚSQUEDA EN PALABRAS
-// ─────────────────────────────────────────────
 
 function getSearchTerms(query) {
   return normalizeText(query)
@@ -26,9 +20,6 @@ function getSearchTerms(query) {
 }
 
 
-// ─────────────────────────────────────────────
-// CALCULAR RELEVANCIA
-// ─────────────────────────────────────────────
 
 function calculateScore(item, terms) {
   const title = normalizeText(item.title)
@@ -42,22 +33,22 @@ function calculateScore(item, terms) {
 
   terms.forEach((term) => {
 
-    // Coincidencia exacta en el título
+    
     if (title === term) {
       score += 100
     }
 
-    // El título empieza por la búsqueda
+   
     if (title.startsWith(term)) {
       score += 70
     }
 
-    // El título contiene la búsqueda
+    
     if (title.includes(term)) {
       score += 50
     }
 
-    // Coincidencia en palabras clave
+    
     keywords.forEach((keyword) => {
 
       if (keyword === term) {
@@ -73,18 +64,17 @@ function calculateScore(item, terms) {
       }
     })
 
-    // Coincidencia en categoría
     if (category.includes(term)) {
       score += 20
     }
 
-    // Coincidencia en descripción
+    
     if (description.includes(term)) {
       score += 15
     }
   })
 
-  // Premiar resultados que contienen TODOS los términos
+ 
   const searchableText = normalizeText([
     item.title,
     item.category,
@@ -104,9 +94,7 @@ function calculateScore(item, terms) {
 }
 
 
-// ─────────────────────────────────────────────
-// BUSCADOR PRINCIPAL
-// ─────────────────────────────────────────────
+
 
 export function searchContent(query, options = {}) {
 
@@ -134,9 +122,6 @@ export function searchContent(query, options = {}) {
 }
 
 
-// ─────────────────────────────────────────────
-// SUGERENCIAS
-// ─────────────────────────────────────────────
 
 export function getSearchSuggestions(limit = 8) {
 
@@ -150,9 +135,5 @@ export function getSearchSuggestions(limit = 8) {
     }))
 }
 
-
-// ─────────────────────────────────────────────
-// EXPORTACIÓN AUXILIAR
-// ─────────────────────────────────────────────
 
 export { normalizeText }

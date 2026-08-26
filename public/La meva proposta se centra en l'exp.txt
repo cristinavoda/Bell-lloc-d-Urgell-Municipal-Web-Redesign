@@ -1,0 +1,40 @@
+"La meva proposta se centra en l'experiència ciutadana i en la reorganització de la informació. La infraestructura i les eines administratives existents es poden mantenir o integrar segons les possibilitats del contracte actual."
+
+¿La web municipal actual està inclosa dins del contracte amb SEMIC? I el contracte permet redissenyar la capa de frontend o cal treballar sobre la plataforma actual?"
+SEMIC
+   ↓
+plataforma / infraestructura / administración electrónica
+
+Ajuntament
+   ↓
+contenidos + gestión municipal
+
+Informàtic municipal
+   ↓
+soporte / sistemas / necesidades internas
+
+TU
+   ↓
+UX + arquitectura + diseño + frontend + experiencia ciudadana
+
+
+
+"He preparado una propuesta de cómo podría funcionar mejor la experiencia digital del ciudadano, respetando los sistemas y obligaciones que ya tiene el Ayuntamiento."
+
+
+La proposta se centra en el redisseny del frontend i de l’experiència d’usuari. No planteja substituir la infraestructura ni les plataformes administratives existents.”
+
+
+Frontend
+
+arquitectura de información;
+navegación;
+responsive;
+accesibilidad;
+buscador;
+diseño visual;
+páginas de contenido;
+servicios prioritarios;
+Agenda/Activitats;
+acceso simplificado a la Seu electrònica;
+Bell-lloc Soluciona como funcionalidad a integrar/desarrollar.

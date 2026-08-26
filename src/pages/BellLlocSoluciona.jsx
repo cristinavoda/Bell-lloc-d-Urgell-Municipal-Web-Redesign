@@ -44,7 +44,7 @@ function BellLlocSoluciona() {
 
       <div className="bell-lloc-container">
 
-        {/* BREADCRUMB */}
+       
 
         <BreadCrumb
           items={[
@@ -59,7 +59,7 @@ function BellLlocSoluciona() {
         />
 
 
-        {/* INTRO */}
+        
 
         <section className="soluciona-intro">
 
@@ -80,7 +80,7 @@ function BellLlocSoluciona() {
         </section>
 
 
-        {/* COMUNICAR */}
+       
 
         <section className="soluciona-feature">
 
@@ -124,7 +124,7 @@ function BellLlocSoluciona() {
         </section>
 
 
-        {/* ESTAT DE LES INCIDÈNCIES */}
+       
 
         <section className="soluciona-sections">
 
@@ -190,7 +190,7 @@ function BellLlocSoluciona() {
         </section>
 
 
-        {/* UBICACIÓ */}
+       
 
         <section className="soluciona-info">
 

@@ -1,0 +1,165 @@
+
+
+.benvinguda-alcalde-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.benvinguda-container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+
+
+
+.benvinguda-intro {
+  padding: 68px 0 48px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.benvinguda-intro h1 {
+  max-width: 850px;
+
+  margin: 0;
+
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.05;
+font-family: 'Roboto Slab';
+color: #286841!important;
+  letter-spacing: -0.035em;
+}
+
+
+
+
+.benvinguda-content {
+  
+
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-top: 3rem;;
+}
+
+.benvinguda-content p {
+  max-width: 100%;
+
+  margin: 0 0 22px;
+
+  color: var(--color-muted);
+}
+
+.benvinguda-content strong {
+  color: var(--color-text);
+  font-weight: 650;
+}
+
+
+
+.alcalde-photo {
+  float: right;
+
+  width: 360px;
+  max-width: 42%;
+
+  height: auto;
+
+  margin: 0 0 30px 55px;
+
+  border: 1px solid var(--color-border);
+
+  display: block;
+}
+
+
+
+.alcalde-signature {
+  clear: both;
+
+  padding-top: 42px;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.alcalde-signature p {
+  margin: 0 0 4px;
+
+  color: var(--color-text);
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 1.4rem;
+  line-height: 1.3;
+
+  font-weight: 500;
+}
+
+.alcalde-signature span {
+  color: var(--color-muted);
+
+  font-size: 0.9rem;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .alcalde-photo {
+    width: 300px;
+    max-width: 40%;
+
+    margin-left: 35px;
+  }
+
+  .benvinguda-content {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+}
+
+
+
+@media (max-width: 650px) {
+
+  .benvinguda-container {
+    width: calc(100% - 32px);
+  }
+
+  .benvinguda-intro {
+    padding: 48px 0 38px;
+  }
+
+  .benvinguda-intro h1 {
+    font-size: clamp(2.2rem, 11vw, 3.1rem);
+  }
+
+  .benvinguda-content {
+    padding: 42px 0 70px;
+
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+
+  
+
+  .alcalde-photo {
+    float: none;
+
+    width: 100%;
+    max-width: none;
+
+    margin: 0 0 38px;
+  }
+
+
+  .alcalde-signature {
+    padding-top: 34px;
+  }
+
+}

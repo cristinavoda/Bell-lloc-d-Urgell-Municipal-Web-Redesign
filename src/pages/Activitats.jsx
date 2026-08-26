@@ -190,7 +190,7 @@ function Activitats() {
         />
 
 
-        {/* INTRO */}
+       
 
         <section className="activitats-intro">
 
@@ -211,7 +211,7 @@ function Activitats() {
         </section>
 
 
-        {/* DESTACADA */}
+        
 
         <section className="activitat-destacada">
 
@@ -254,7 +254,7 @@ function Activitats() {
         </section>
 
 
-        {/* FILTRES */}
+      
 
         <section className="activitats-filters">
 
@@ -336,7 +336,7 @@ function Activitats() {
         </section>
 
 
-        {/* RESULTATS */}
+        
 
         <section className="activitats-results">
 
@@ -468,7 +468,7 @@ function Activitats() {
         </section>
 
 
-        {/* FINAL */}
+        
 
         <section className="activities-footer">
 

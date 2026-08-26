@@ -1,0 +1,11 @@
+“No he intentat canviar la informació que ja existeix. He intentat canviar la manera com la ciutadania hi arriba.”
+
+Esa frase explica muy bien el proyecto.
+
+Y si te pregunta:
+
+“¿Y qué habría que hacer para convertir esto en la web real?”
+
+Ahí tienes una respuesta profesional:
+
+“Aquesta demo és una proposta de frontend i experiència d’usuari. La implementació definitiva s’hauria d’adaptar al contracte i a la infraestructura actual de l’Ajuntament, inclosa la plataforma de SEMIC.”

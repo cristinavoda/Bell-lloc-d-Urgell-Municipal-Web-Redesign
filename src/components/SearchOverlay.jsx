@@ -192,12 +192,12 @@ function SearchOverlay({ isOpen, onClose }) {
         </div>
 
 
-        {/* CONTENT */}
+        
 
         <div className="search-results">
 
 
-          {/* ESTADO INICIAL */}
+         
 
           {!query.trim() && (
 
@@ -236,7 +236,7 @@ function SearchOverlay({ isOpen, onClose }) {
           )}
 
 
-          {/* RESULTADOS */}
+          
 
           {query.trim() && results.length > 0 && (
 

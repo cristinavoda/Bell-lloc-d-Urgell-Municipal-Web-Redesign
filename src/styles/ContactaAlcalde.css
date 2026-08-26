@@ -1,0 +1,236 @@
+
+
+.contacta-alcalde-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.contacta-alcalde-container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+
+
+.contacta-alcalde-intro {
+  max-width: 760px;
+
+  padding: 68px 0 60px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contacta-alcalde-intro h1 {
+  margin: 0 0 22px;
+
+  font-size: clamp(2.5rem, 5vw, 4.1rem);
+  line-height: 1.05;
+
+  letter-spacing: -0.035em;
+}
+
+.contacta-alcalde-intro p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+
+
+.contacta-alcalde-form-section {
+  padding: 68px 0 100px;
+}
+
+.contacta-alcalde-heading {
+  margin-bottom: 40px;
+}
+
+.contacta-alcalde-heading > span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--color-green);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.13em;
+}
+
+.contacta-alcalde-heading h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.2;
+}
+
+
+
+.contacta-alcalde-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 28px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+}
+
+.form-field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  margin-bottom: 8px;
+
+  color: var(--color-text);
+
+  font-size: 0.88rem;
+  font-weight: 650;
+}
+
+.form-field label span {
+  color: var(--color-green);
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+
+  padding: 13px 0;
+
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+
+  background: transparent;
+
+  color: var(--color-text);
+
+  font: inherit;
+  font-size: 0.96rem;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease;
+}
+
+.form-field textarea {
+  min-height: 180px;
+
+  resize: vertical;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: #8a8a84;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border-bottom-color: var(--color-green);
+}
+
+
+
+.contacta-alcalde-submit {
+  align-self: flex-start;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 8px;
+
+  padding: 9px 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: var(--color-green);
+
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease;
+}
+
+.contacta-alcalde-submit:hover {
+  color: var(--color-green-dark);
+}
+
+
+
+.contacta-alcalde-note {
+  max-width: 720px;
+
+  margin: 42px 0 0;
+
+  padding-top: 20px;
+
+  border-top: 1px solid var(--color-border);
+
+  color: var(--color-muted);
+
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+
+
+@media (max-width: 600px) {
+
+  .contacta-alcalde-container {
+    width: calc(100% - 32px);
+  }
+
+  .contacta-alcalde-intro {
+    padding: 48px 0 45px;
+  }
+
+  .contacta-alcalde-intro h1 {
+    font-size: clamp(2.25rem, 11vw, 3.2rem);
+  }
+
+  .contacta-alcalde-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .contacta-alcalde-form-section {
+    padding: 52px 0 70px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+  }
+
+  .contacta-alcalde-submit {
+    margin-top: 0;
+  }
+
+}

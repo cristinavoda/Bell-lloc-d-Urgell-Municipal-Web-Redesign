@@ -1,0 +1,210 @@
+
+
+.alcaldia-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.alcaldia-container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+
+
+.alcaldia-intro {
+  max-width: 800px;
+
+  padding: 68px 0 62px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.alcaldia-intro h1 {
+  margin: 0 0 22px;
+
+  font-size: clamp(2.6rem, 5vw, 4.3rem);
+  line-height: 1.05;
+
+  letter-spacing: -0.035em;
+}
+
+.alcaldia-intro p {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+
+
+
+.alcaldia-options {
+  padding: 70px 0 20px;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.alcaldia-option {
+  display: grid;
+
+  grid-template-columns: 1fr 30px;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 38px 8px;
+
+  color: var(--color-text);
+  text-decoration: none;
+
+  border-top: 1px solid var(--color-border);
+
+  transition:
+    background-color 0.2s ease,
+    padding-left 0.25s ease;
+}
+
+.alcaldia-option:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.alcaldia-option:hover {
+  padding-left: 18px;
+
+  background: rgba(0, 0, 0, 0.025);
+}
+
+
+
+
+.alcaldia-option-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--color-green);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.13em;
+}
+
+
+
+.alcaldia-option-content h2 {
+  margin: 0 0 10px;
+
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  line-height: 1.25;
+
+  font-weight: 600;
+}
+
+.alcaldia-option-content p {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+
+
+
+.alcaldia-option-arrow {
+  justify-self: end;
+
+  color: var(--color-green);
+
+  font-size: 1.35rem;
+
+  transition: transform 0.2s ease;
+}
+
+.alcaldia-option:hover .alcaldia-option-arrow {
+  transform: translateX(6px);
+}
+
+
+
+
+.alcaldia-note {
+  max-width: 760px;
+
+  padding: 32px 0 90px;
+}
+
+.alcaldia-note p {
+  margin: 0;
+
+  color: var(--color-muted);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  .alcaldia-container {
+    width: calc(100% - 32px);
+  }
+
+  .alcaldia-intro {
+    padding: 48px 0 44px;
+  }
+
+  .alcaldia-intro h1 {
+    font-size: clamp(2.3rem, 12vw, 3.2rem);
+  }
+
+  .alcaldia-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .alcaldia-options {
+    padding-top: 48px;
+  }
+
+  .alcaldia-option {
+    grid-template-columns: 1fr 20px;
+
+    gap: 16px;
+
+    padding: 27px 2px;
+  }
+
+  .alcaldia-option:hover {
+    padding-left: 8px;
+  }
+
+  .alcaldia-option-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .alcaldia-option-content p {
+    font-size: 0.87rem;
+    line-height: 1.55;
+  }
+
+  .alcaldia-note {
+    padding-bottom: 65px;
+  }
+
+}

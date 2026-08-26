@@ -6,15 +6,13 @@ import {
   HardHat,
   GraduationCap,
   Users,
-  ShieldCheck,
-  Euro,
   FolderOpen,
   FileCheck2,
   Bell,
-  HelpCircle,
+  
 } from 'lucide-react'
 
-import { Link } from 'react-router-dom'
+
 
 import BreadCrumb from '../components/BreadCrumb'
 import '../styles/SeuElectronica.css'
@@ -107,7 +105,6 @@ function SeuElectronica() {
         />
 
 
-        {/* INTRO */}
 
         <section className="seu-intro">
 
@@ -138,7 +135,7 @@ function SeuElectronica() {
         </section>
 
 
-        {/* TRÀMITS DESTACATS */}
+        
 
         <section className="seu-section">
 
@@ -240,7 +237,7 @@ function SeuElectronica() {
         </section>
 
 
-        {/* INFORMACIÓ */}
+      
 
         <section className="seu-info-grid">
 
@@ -299,7 +296,7 @@ function SeuElectronica() {
 
 </section>
 
-        {/* AVÍS */}
+        
 
         <section className="seu-note">
 

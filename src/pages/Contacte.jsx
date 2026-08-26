@@ -50,7 +50,7 @@ function Contacte() {
         </section>
 
 
-        {/* INFORMACIÓ DE CONTACTE */}
+      
 
         <section className="contacte-info">
 
@@ -136,7 +136,7 @@ function Contacte() {
         </section>
 
 
-        {/* FORMULARI + MAPA */}
+        
 
         <section className="contacte-main">
 
@@ -240,7 +240,7 @@ function Contacte() {
 
 
  
-          {/* MAPA / UBICACIÓ */}
+         
 
           <aside className="contacte-location">
 
