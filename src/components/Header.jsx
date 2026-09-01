@@ -167,18 +167,7 @@ const [searchOpen, setSearchOpen] = useState(false)
 
         </div>
 
-<div className="mobile-sidebar-weather">
-    <CloudSun
-      size={18}
-      strokeWidth={1.7}
-      aria-hidden="true"
-    />
 
-    <div>
-      <strong>35° / 19°</strong>
-      <span>Dimarts, 25 d'agost</span>
-    </div>
-  </div>
         <nav
           className="mobile-nav"
           aria-label="Navegació mòbil"

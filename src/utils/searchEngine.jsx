@@ -105,7 +105,7 @@ export function searchContent(query, options = {}) {
 
   const terms = getSearchTerms(query)
 
-  // Si no hay búsqueda
+  
   if (!terms.length) {
     return []
   }
